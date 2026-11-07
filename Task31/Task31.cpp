@@ -11,7 +11,7 @@ BOOL ProcessFile(HANDLE hTargetBuffer, const char* filename, BOOL hideErrors)
 	{
 		if (hTargetBuffer != NULL && !hideErrors)
 		{
-			char errorMsg[256];
+			char errorMsg[256]; 
 			wsprintfA(errorMsg, "Error: File '%s' not found!\n", filename);
 			DWORD dwWritten;
 			WriteConsoleA(hTargetBuffer, errorMsg, lstrlenA(errorMsg), &dwWritten, NULL);
